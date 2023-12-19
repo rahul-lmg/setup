@@ -1,0 +1,29 @@
+- name: Install Terminal tools
+  apt:
+    name: ['jq', 'zsh', 'bat', 'ripgrep', 'fzf', 'pipx']
+    update_cache: true
+
+- name: Change shell to zsh
+  shell: chsh -s `which zsh`
+- name: Install oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+- name: Install zsh autocomplete
+  ansible.builtin.git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
+
+- name: Install power10k
+  shell: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+  
+- name: ZOxide
+  shell: curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+
+- name: GH CLI
+  shell: echo "TODO :("
+
+- name: direnv
+  shell: curl -sfL https://direnv.net/install.sh | bash
+
+- name: Fix batcat to bat
+  shell: mkdir -p ~/.local/bin && ln -s /usr/bin/batcat ~/.local/bin/bat

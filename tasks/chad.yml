@@ -1,0 +1,14 @@
+- name: NeoVim Repo
+  ansible.builtin.apt_repository:
+    repo: ppa:neovim-ppa/stable
+
+- name: Install NeoVim
+  apt: name=neovim
+  
+  # shell: curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz && 
+
+- name: Chad
+  shell: git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
+- name: tmux
+  shell: echo "someday"

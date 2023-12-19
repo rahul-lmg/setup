@@ -1,0 +1,5 @@
+- name: zshrc
+  shell: cp .zshrc ~/.zshrc
+
+- name: tfenv config
+  shell: echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.zprofile

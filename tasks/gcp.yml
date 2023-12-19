@@ -1,0 +1,6 @@
+- name: Download Google Cloud CLI
+  shell: curl https://sdk.cloud.google.com > install.sh
+- name: Install gcloud
+  shell: bash install.sh --disable-prompts
+- name: GoLang
+  apt: name=golang
