@@ -1,11 +1,10 @@
-- name: NeoVim Repo
-  ansible.builtin.apt_repository:
-    repo: ppa:neovim-ppa/stable
 
 - name: Install NeoVim
-  apt: name=neovim
-  
-  # shell: curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz && 
+  shell: |
+    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+    tar -xzvf nvim-linux64.tar.gz 
+    mv nvim-linux64 /opt/
+    ln -s /opt/nvim-linux64/bin/nvim /usr/local/bin/nvim
 
 - name: Chad
   shell: git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1

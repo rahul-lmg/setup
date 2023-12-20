@@ -18,17 +18,21 @@ List of all the softwares that should be installed for engineers:
   - [x] bat
   - [x] direnv
 - Google:
+
   - [x] gcloud
   - [ ] bq
   - [x] GoLang
+
 - Infra:
 
-  - [ ] tfenv
+  - [x] tfenv
   - [ ] docker
+  - [x] aws
+  - [ ] snowsql
 
 - gigachad:
   - [x] neovim
-  - [ ] nvchad
+  - [x] nvchad
   - [ ] tmux
 - Python:
   - [x] pyenv

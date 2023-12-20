@@ -12,4 +12,5 @@
     - include: tasks/gcp.yml
     - include: tasks/chad.yml
     - include: tasks/node.yml
+    - include: tasks/cloud.yml
     - include: tasks/last.yml
