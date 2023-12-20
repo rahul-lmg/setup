@@ -4,6 +4,11 @@ A repository to help new starters setup with the local environment.
 This is an effort to get the right tools installed in a single go to get the environment up and
 running as quickly as possible.
 
+## prerequisites
+
+- curl
+- git
+
 ## software-list
 
 List of all the softwares that should be installed for engineers:
