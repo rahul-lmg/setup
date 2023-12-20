@@ -4,10 +4,20 @@ A repository to help new starters setup with the local environment.
 This is an effort to get the right tools installed in a single go to get the environment up and
 running as quickly as possible.
 
+```bash
+curl -sS https://raw.githubusercontent.com/rahul-lmg/setup/main/bin/bootstrap.sh | bash
+```
+
 ## prerequisites
 
-- curl
-- git
+Run the following command in the new linux environment
+
+```bash
+sudo apt update && apt install -y \
+    software-properties-common && apt-add-repository -y \
+    ppa:ansible/ansible && apt update && apt install -y \
+    curl git ansible build-essential
+```
 
 ## software-list
 
