@@ -5,7 +5,7 @@ This is an effort to get the right tools installed in a single go to get the env
 running as quickly as possible.
 
 ```bash
-curl -sS https://raw.githubusercontent.com/rahul-lmg/setup/main/bin/bootstrap.sh | bash
+curl -sS https://raw.githubusercontent.com/rahul-lmg/setup/main/bin/linux-bootstrap.sh | bash
 ```
 
 ## prerequisites
@@ -50,7 +50,11 @@ List of all the softwares that should be installed for engineers:
   - [x] nvchad
   - [ ] tmux
 - Python:
+
   - [x] pyenv
+
+- Good to have:
+  - [ ] gh cli
 
 ## manual
 

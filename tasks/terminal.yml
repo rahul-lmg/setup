@@ -1,6 +1,6 @@
 - name: Install Terminal tools
   apt:
-    name: ['jq', 'zsh', 'bat', 'ripgrep', 'fzf', 'pipx', 'gh', 'fd-find']
+    name: ['jq', 'zsh', 'bat', 'ripgrep', 'fzf', 'pipx', 'fd-find']
     update_cache: true
 
 - name: Change shell to zsh
