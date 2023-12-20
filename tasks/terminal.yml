@@ -1,6 +1,6 @@
 - name: Install Terminal tools
   apt:
-    name: ['jq', 'zsh', 'bat', 'ripgrep', 'fzf', 'pipx']
+    name: ['jq', 'zsh', 'bat', 'ripgrep', 'fzf', 'pipx', 'gh', 'fd-find']
     update_cache: true
 
 - name: Change shell to zsh
@@ -16,7 +16,7 @@
 - name: Install power10k
   shell: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   
-- name: ZOxide
+- name: Zoxide
   shell: curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
 - name: GH CLI
